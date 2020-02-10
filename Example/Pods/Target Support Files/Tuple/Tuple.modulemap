@@ -1,0 +1,6 @@
+framework module Tuple {
+  umbrella header "Tuple-umbrella.h"
+
+  export *
+  module * { export * }
+}

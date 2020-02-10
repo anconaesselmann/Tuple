@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Tuple_Tests' do
+  pod 'Tuple', :path => '../'
+  
+  
+end
