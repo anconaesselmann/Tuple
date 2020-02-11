@@ -4,6 +4,14 @@
 [![License](https://img.shields.io/cocoapods/l/Tuple.svg?style=flat)](https://cocoapods.org/pods/Tuple)
 [![Platform](https://img.shields.io/cocoapods/p/Tuple.svg?style=flat)](https://cocoapods.org/pods/Tuple)
 
+### Tuple adds functionality for working with n-tuples. 
+
+- Appending (`append(value:, toTuple:)`) or prepending (`prepend(value:, toTuple:)`) creates a copy of a given n-tuple with an additional value. 
+
+- We can convert n-tuples to arrays (`arrayFromTuple(T)`) and arrays to n-tuples (`tuple(from: [])`, `triple(from: [])`, ...). 
+
+- `element(at:Int, in: Tuple)` allows accessing tuples with an integer index.
+
 ## Example
 
 Let's play a game of Cat, Mouse and Dog. It's contrived. It uses Tuple. Here we go:
