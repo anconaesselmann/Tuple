@@ -259,6 +259,40 @@ public struct Tuple {
         return 8
     }
 
+    // MARK: - nilValues
+
+    static public func nilValues<T1>() -> T1? {
+        return nil
+    }
+
+    static public func nilValues<T1, T2>() -> (T1?, T2?) {
+        return (nil, nil)
+    }
+
+    static public func nilValues<T1, T2, T3>() -> (T1?, T2?, T3?) {
+        return (nil, nil, nil)
+    }
+
+    static public func nilValues<T1, T2, T3, T4>() -> (T1?, T2?, T3?, T4?) {
+        return (nil, nil, nil, nil)
+    }
+
+    static public func nilValues<T1, T2, T3, T4, T5>() -> (T1?, T2?, T3?, T4?, T5?) {
+        return (nil, nil, nil, nil, nil)
+    }
+
+    static public func nilValues<T1, T2, T3, T4, T5, T6>() -> (T1?, T2?, T3?, T4?, T5?, T6?) {
+        return (nil, nil, nil, nil, nil, nil)
+    }
+
+    static public func nilValues<T1, T2, T3, T4, T5, T6, T7>() -> (T1?, T2?, T3?, T4?, T5?, T6?, T7?) {
+        return (nil, nil, nil, nil, nil, nil, nil)
+    }
+
+    static public func nilValues<T1, T2, T3, T4, T5, T6, T7, T8>() -> (T1?, T2?, T3?, T4?, T5?, T6?, T7?, T8?) {
+        return (nil, nil, nil, nil, nil, nil, nil, nil)
+    }
+
 }
 
 
