@@ -51,8 +51,7 @@ while !deck.isEmpty {
 // Let's calculate scores based on the players target suit, the value of their card and the round number
 func calculateValue(player: String, suit: Suit) -> Int {
     return playedCards
-        .filter { $0.player == player }
-        .filter { $0.suit == suit }
+        .filter { $0.player == player && $0.suit == suit }
         .reduce(into: 0) { $0 += $1.round - $1.value }
 }
 
@@ -71,6 +70,9 @@ let targetScore: Int = Tuple.element(at: elementIndex, in: scores)!
 
 // If the picked score is a duplicate, everyone with the same score wins
 // TODO: implement
+
+
+
 
 // If the picked score is the highest score, both lower scores get a point, and if the picked score is the lowest score, both higher scores get a point
 // TODO: implement
